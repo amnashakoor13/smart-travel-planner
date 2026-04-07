@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Theme: #A59D84, #C1BAA1, #D7D3BF, #ECEBDE - warm neutral */
+:root {
+  --primary: #0f4c5c;
+  --primary-hover: #146b81;
+  --primary-light: #2f8aa1;
+  --primary-bg: #f4f8f8;
+  --secondary: #2c7da0;
+  --secondary-hover: #368db2;
+  --white: #ffffff;
+  --bg: #f7f5f2;
+  --text: #1f2937;
+  --text-muted: #5f6b78;
+  --border: rgba(15, 76, 92, 0.16);
+
+  /* CTA accent (Energy) */
+  --accent: #e07a5f;
+  --accent-hover: #c9654a;
+
+  /* Named palette vars (used by other page CSS files) */
+  --ocean-blue: #0f4c5c;
+  --ocean-blue-dark: #0b3e4a;
+  --seafoam-green: #3a7d7c;
+  --seafoam-green-light: #b9dddc;
+  --tropical-green: #3a7d7c;
+  --warm-coral: #b85c38;
+  --warm-coral-dark: #9b2c32;
+  --sunny-yellow: #d4a373;
+  --earthy-brown: #7f5539;
+  --earthy-brown-dark: #5e412e;
+  --frosty-grey: #dbe4e8;
+
+  /* Soft gradient palette (used across multiple pages) */
+  --soft-indigo: #0f4c5c;
+  --soft-violet: #5c7f9a;
+  --soft-mint: #6ca5a3;
+  --soft-sky: #8cbcc6;
+  --soft-lavender: #b8a1ff;
+  --soft-pink: #ff7ab6;
+  --soft-green: #4f8a89;
+  --soft-orange: #d67f57;
+  --soft-peach: #efc2a8;
+  --soft-yellow: #d8b07c;
+
+  /* Used in TravelHub/others for backdrop-filter */
+  --module-blur: blur(16px);
+  --greenery-mid: #2ecc71;
+
+  --success: #3a7d7c;
+  --success-hover: #2f6867;
+  --danger: #c1121f;
+  --danger-hover: #9d0208;
+  --radius: 12px;
+  --radius-sm: 8px;
+  --radius-full: 9999px;
+  --shadow: 0 8px 28px rgba(15, 23, 42, 0.08);
+  --shadow-hover: 0 14px 34px rgba(15, 23, 42, 0.14);
+  --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.05);
+  --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.08), 0 2px 8px rgba(0, 0, 0, 0.04);
+  --shadow-card-hover: 0 20px 50px rgba(0, 0, 0, 0.12), 0 8px 24px rgba(0, 0, 0, 0.06);
+  --glass-bg: rgba(255, 255, 255, 0.72);
+  --glass-border: rgba(15, 76, 92, 0.18);
+  --glass-dark: rgba(52, 73, 94, 0.75);
+  --font-sans: 'Inter', 'Poppins', system-ui, -apple-system, sans-serif;
+  --text-dark: #34495e;
+  --text-medium: #5f6f87;
+  --module-soft-bg: #f0f7ff;
+  --module-soft-border: rgba(0, 74, 153, 0.15);
+  --sidebar-bg: #eef5ff;
+  --sidebar-border: rgba(0, 74, 153, 0.22);
+}
+
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.55;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', var(--font-sans);
+  letter-spacing: -0.01em;
+}
+
+/* UNIFIED BUTTON STYLES - Natural */
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: var(--radius-full);
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.24s ease, box-shadow 0.24s ease, filter 0.24s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  box-shadow: 0 8px 20px rgba(15, 76, 92, 0.24);
+  font-family: var(--font-sans);
+}
+
+.btn-primary:hover:not(:disabled) {
+  transform: translateY(-2px) scale(1.01);
+  box-shadow: 0 12px 26px rgba(15, 76, 92, 0.32);
+  filter: saturate(1.05);
+}
+
+.btn-primary.full-width { width: 100%; }
+
+.btn-secondary {
+  background: var(--primary-bg);
+  color: var(--primary);
+  padding: 10px 20px;
+  border: 2px solid var(--primary);
+  border-radius: var(--radius);
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background: var(--primary);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.btn-success {
+  background: var(--success);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: var(--radius);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-success:hover:not(:disabled) {
+  background: var(--success-hover);
+  transform: translateY(-2px);
+}
+
+.btn-danger {
+  background: var(--danger);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: var(--radius);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-danger:hover:not(:disabled) {
+  background: var(--danger-hover);
+  transform: translateY(-2px);
+}
+
+/* Shared error banners for pages */
+.page-error-banner,
+.error-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 16px;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: var(--radius-sm);
+  color: #b91c1c;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+.page-error-banner button,
+.error-banner button {
+  padding: 6px 14px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none !important;
+}
+
+/* UNIFIED INPUT STYLES */
+input, select, textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  font-size: 15px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  font-family: inherit;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(45, 106, 79, 0.15);
+}
+
+/* Card */
+.card {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 24px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+}
+
+/* Shared micro-interactions + image presentation */
+a, button, .card, .goland-module, .package-card, .destination-card, .popular-card {
+  transition: all 0.24s ease;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+.package-image img,
+.destination-card img,
+.popular-card img,
+.famous-location-card img,
+.hotel-card img,
+.restaurant-card img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.12);
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: 18px;
+    border-radius: 10px;
+  }
+}

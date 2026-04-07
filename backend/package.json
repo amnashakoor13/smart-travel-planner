@@ -1,0 +1,35 @@
+{
+  "name": "smart-travel-planner-backend",
+  "version": "1.0.0",
+  "description": "Backend for Smart Travel Planner",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "free-port": "powershell -NoProfile -ExecutionPolicy Bypass -Command \"$pids=(Get-NetTCPConnection -LocalPort 5001 -State Listen -ErrorAction SilentlyContinue | Select-Object -ExpandProperty OwningProcess -Unique); foreach ($p in $pids) { Stop-Process -Id $p -Force -ErrorAction SilentlyContinue }; exit 0\"",
+    "dev:fixed": "npm run free-port && nodemon server.js",
+    "fetch-hotels": "node src/scripts/fetchHotelsFromGoogle.js",
+    "seed-api-keys": "node src/scripts/seedApiKeys.js"
+  },
+  "keywords": [
+    "travel",
+    "planner",
+    "mern"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.5.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.5.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^8.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

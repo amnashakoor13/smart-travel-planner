@@ -1,0 +1,170 @@
+/* Travel Fund - GoLand Style + savings / calculator photo background */
+
+.travel-fund {
+  min-height: calc(100vh - 120px);
+  padding: 0;
+  position: relative;
+  isolation: isolate;
+  overflow-x: hidden;
+}
+
+.travel-fund::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  background: url('../assets/travel-fund-bg.png') 50% 42% / cover no-repeat;
+  opacity: 0.38;
+  pointer-events: none;
+  filter: brightness(0.93);
+}
+
+.travel-fund > * {
+  position: relative;
+  z-index: 1;
+}
+
+.travel-fund .header {
+  background: rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(20px) saturate(130%);
+  -webkit-backdrop-filter: blur(20px) saturate(130%);
+  padding: 24px 28px;
+  border-radius: 16px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+}
+
+.travel-fund .header h1 {
+  color: var(--ocean-blue);
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+.back-btn {
+  height: 38px;
+  padding: 8px 16px;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-hover) 100%);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 10px rgba(30, 136, 229, 0.3);
+  letter-spacing: 0.2px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+.back-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(30, 136, 229, 0.4);
+  background: linear-gradient(135deg, var(--primary-hover) 0%, var(--primary) 100%);
+}
+
+.travel-fund .content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.travel-fund .budgets-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 25px;
+}
+
+.travel-fund .budget-card {
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  padding: 28px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transition: all 0.3s ease;
+}
+
+.travel-fund .budget-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.88);
+}
+
+.travel-fund .budget-card h3 {
+  color: var(--ocean-blue);
+  margin-bottom: 15px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.travel-fund .budget-card p {
+  color: var(--earthy-brown);
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.travel-fund .total {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--warm-coral);
+  margin: 20px 0 !important;
+  text-align: center;
+  padding: 15px;
+  background: linear-gradient(135deg, var(--sunny-yellow) 0%, var(--warm-coral) 100%);
+  border-radius: 12px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.travel-fund .delete-btn {
+  width: 100%;
+  height: 44px;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(231, 76, 60, 0.25);
+  letter-spacing: 0.3px;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.travel-fund .delete-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(231, 76, 60, 0.35);
+}
+
+.travel-fund .empty,
+.travel-fund .loading {
+  text-align: center;
+  padding: 60px;
+  background: rgba(255, 255, 255, 0.76);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: 16px;
+  color: var(--text);
+  font-size: 18px;
+  font-weight: 500;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}

@@ -1,0 +1,128 @@
+1. Login / Registration
+
+The login module includes the following fields:
+
+Name
+
+Email
+
+Contact Number
+
+Password
+
+Confirm Password
+
+Login as Admin or User
+
+
+
+2. Dashboard
+
+The dashboard displays multiple options for the user.
+
+At the top, there is a search bar.Below the search bar, the following options are available:
+
+Travel Bucket List
+
+Travel Diary (contains past trips)
+
+Travel Fund (shows saved and calculated budgets)
+
+Other dashboard sections include:
+
+Travel Hub
+
+Places to Stay
+
+Money Map
+
+Travel Map
+
+Buddy Bot
+
+At the bottom, there is a section for Popular Destinations.Below that, a Contact Us option is provided.The dashboard has a background image for better visual appearance.
+
+
+
+3. Travel Hub
+
+The Travel Hub displays different travel places.
+
+A search option is available
+
+Popular places are shown
+
+When a user selects a place, the following information is displayed:
+
+History of the place
+
+Famous locations
+
+Weather information
+
+After selecting a place, an Explore Places to Stay option appears:
+
+Restaurants available at that location (shown rating-wise)
+
+Online booking option
+
+Hotel information including:
+
+Email and contact details
+
+Room images
+
+
+
+4. Money Map (Budget Calculator)
+
+Next, the “Map Your Money with Our Calculator” option appears.
+
+The user enters:
+
+Number of trip members
+
+Number of days
+
+Season
+
+Destination
+
+The system then automatically calculates the estimated budget using AI, including:
+
+Transportation
+
+Food
+
+Activities
+
+Miscellaneous expenses
+
+A budget summary and cost breakdown are displayed.A beautiful calculator image is shown in the background.
+
+
+
+5. Travel Map
+
+The Travel Map displays locations directly on the map to help users visualize routes and destinations.
+
+
+
+6. Buddy Boot
+
+The Buddy Bot is an AI-powered virtual travel assistant integrated into the travel website.
+
+It communicates with users in natural language and helps them plan trips easily.The chatbot understands the user’s mood, travel preferences, and budget to suggest suitable destinations and itineraries.
+
+It can:
+
+Compare different travel options
+
+Provide backup plans in case of bad weather or budget issues
+
+Learn from past trips to give better recommendations
+
+This module works 24/7, reduces manual effort, and makes travel planning more personalized and user-friendly.
+
+
+

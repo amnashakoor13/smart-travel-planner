@@ -1,0 +1,318 @@
+🧱 TECHNOLOGY STACK (FINAL)
+
+Frontend: React.js
+
+Backend: Node.js + Express.js
+
+Database: MongoDB
+
+APIs Integrated:
+
+Maps API → Location & route visualization
+
+Weather API → Real-time weather & forecasts
+
+AI API → Buddy Bot & smart recommendations
+
+
+
+🧩 MODULE-WISE SCOPE (MERN VERSION)
+
+
+
+1️⃣ Authentication Module (Login / Registration)
+
+Scope:Provides secure user and admin authentication with role-based access.
+
+Implementation (MERN):
+
+React forms (Login / Signup)
+
+Express APIs for authentication
+
+MongoDB for user storage
+
+JWT-based authentication
+
+Role selection (Admin / User)
+
+Functions:
+
+Register users with name, email, contact number, password
+
+Secure login
+
+Admin/User redirection
+
+
+
+2️⃣ User Dashboard Module
+
+Scope:Acts as the main navigation and control center after login.
+
+Implementation:
+
+React dashboard UI
+
+API-driven dynamic data
+
+Protected routes (JWT)
+
+Functions:
+
+Search bar
+
+Navigation to:
+
+Travel Bucket List
+
+Travel Diary
+
+Travel Fund
+
+Travel Hub
+
+Places to Stay
+
+Money Map
+
+Travel Map
+
+Buddy Bot
+
+Popular destinations
+
+Contact Us
+
+Background image & responsive UI
+
+
+
+3️⃣ Travel Hub Module
+
+Scope:Displays destination information and travel insights.
+
+Implementation:
+
+MongoDB collections for destinations
+
+Weather API integration
+
+Search & filter functionality
+
+Functions:
+
+Display popular places
+
+Destination search
+
+Show:
+
+History
+
+Famous locations
+
+Weather details
+
+Link with accommodation data
+
+
+
+4️⃣ Places to Stay Module
+
+Scope:Provides accommodation and restaurant information.
+
+Implementation:
+
+MongoDB for hotels & restaurants
+
+Rating-based sorting
+
+Booking links
+
+Functions:
+
+Show hotels and restaurants
+
+Ratings & reviews
+
+Hotel contact details
+
+Room images
+
+Online booking option
+
+
+
+5️⃣ Money Map Module (Budget Calculator)
+
+Scope:Estimates travel costs using AI-assisted calculations.
+
+Implementation:
+
+React form UI
+
+Express budget calculation API
+
+MongoDB for saving results
+
+AI API for smart estimation
+
+Functions:
+
+Input:
+
+Number of members
+
+Days
+
+Season
+
+Destination
+
+Cost calculation:
+
+Transportation
+
+Food
+
+Activities
+
+Miscellaneous
+
+Budget breakdown & summary
+
+Save to Travel Fund
+
+
+
+6️⃣ Travel Fund Module
+
+Scope:Manages saved budgets and financial planning.
+
+Implementation:
+
+MongoDB budget storage
+
+User-specific data retrieval
+
+Functions:
+
+View saved budgets
+
+Compare past budgets
+
+Track expenses planning
+
+
+
+7️⃣ Travel Map Module
+
+Scope:Provides geographical visualization of destinations and routes.
+
+Implementation:
+
+Maps API integration
+
+Interactive markers and routes
+
+Functions:
+
+Display destinations on map
+
+Show routes and distances
+
+Help visualize trip flow
+
+
+
+8️⃣ Buddy Bot Module (AI Virtual Assistant)
+
+Scope:AI-powered chatbot that assists users in planning trips using natural language.
+
+Implementation:
+
+React chat interface
+
+Express AI endpoint
+
+AI API integration
+
+MongoDB for conversation & preference storage
+
+Functions:
+
+Understand user intent, mood, and preferences
+
+Recommend destinations and itineraries
+
+Compare travel options
+
+Suggest backup plans based on:
+
+Weather API
+
+Budget constraints
+
+Learn from past trips
+
+Provide 24/7 assistance
+
+
+
+9️⃣ Admin Panel Module
+
+Scope:Provides full system control and management.
+
+Implementation:
+
+Separate admin dashboard (React)
+
+Protected admin routes
+
+MongoDB data control
+
+Admin Capabilities:
+
+a) User Management
+
+View, enable/disable users
+
+Monitor activity
+
+b) Travel Content Management
+
+Manage destinations, hotels, restaurants
+
+Mark popular/seasonal places
+
+c) Budget Rules Management
+
+Define pricing rules
+
+Seasonal multipliers
+
+d) Buddy Bot Control
+
+Manage bot responses
+
+Control learning behavior
+
+e) Weather & Backup Rules
+
+Configure thresholds and backup logic
+
+f) Analytics & Reports
+
+View system usage
+
+Popular destinations
+
+Budget trends
+
+Theme:
+
+- Main color: 🌿 Seafoam Green (#B2E6CE) - Secondary color 1: 💧 Ocean Blue (#3498DB) - Secondary color 2: 🌳 Earthy Brown (#8B9467) - Accent color: 🌈 Warm Coral (#FFC67D) - Winter touch: �雪 Frosty Grey (#E5E5EA) - Summer touch: ☀️ Sunny Yellow (#F7DC6F)with background pictures
+
+
+

@@ -1,0 +1,7 @@
+Extracted Documents Index
+
+make your trip easy with us.docx -> extracted_docs\make your trip easy with us.docx.txt (chars: 4064)
+smart Travel Buddy.docx -> extracted_docs\smart Travel Buddy.docx.txt (chars: 5034)
+travel buddy final srs  (1).pdf -> extracted_docs\travel buddy final srs (1).pdf.txt (chars: 36383)
+travel buddy roadmap.docx -> extracted_docs\travel buddy roadmap.docx.txt (chars: 2304)
+travel buddy sdd final.pdf -> extracted_docs\travel buddy sdd final.pdf.txt (chars: 25549)
